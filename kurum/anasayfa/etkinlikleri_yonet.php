@@ -191,7 +191,7 @@
                 
             }
 
-            echo '<p>Etkinliğiniz bulunmamaktadır. Etkinlik eklemek için Etkinlik ekle butonuna basınız.</p>';
+            
 
         ?>
     </main>
