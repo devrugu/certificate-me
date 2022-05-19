@@ -72,6 +72,10 @@
                             $sql2 = "UPDATE etkinlik SET e_guncel_mi=0 WHERE e_id=".$e_id;
                             mysqli_query($conn, $sql2);
                         }
+                        else if (strtotime($row['tarih']) > time()) {
+                            $sql2 = "UPDATE etkinlik SET e_guncel_mi=1 WHERE e_id=".$e_id;
+                            mysqli_query($conn, $sql2);
+                        }
                         ?>
                         
                         <?php

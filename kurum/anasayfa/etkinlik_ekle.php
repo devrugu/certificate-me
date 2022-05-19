@@ -118,6 +118,9 @@
             <label for="afis_resmi">Afiş resmi yükleyiniz:</label>
             <input type="file" name="afis_resmi" id="afis_resmi">
 
+            <label for="sertifika_sablonu">Sertifika Şablonu yükleyiniz:</label>
+            <input type="file" name="sertifika_sablonu" id="sertifika_sablonu">
+
             <button type="submit" name="etkinlik_ekle_submit"id="ekle">ekle</button> </div> </div>
         </form>   <div class="circle"> </div>
         <div class="circle1"> </div>

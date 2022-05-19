@@ -62,42 +62,51 @@
             }
         }
 
-        //afis resmi upload islemi
+        //afis resmi ve sertifika sablonu upload islemi
         $dizin = "http://localhost/certificate_me/images/etkinlik_images/"; 
         $hedef_dosya = $dizin . basename($_FILES["afis_resmi"]["name"]); //resim dosya yolu (veritabanına eklenecek)
         $hedef_dosya2 = "../../../images/etkinlik_images/" . basename($_FILES["afis_resmi"]["name"]);
         $upload_kontrol = 1;
         $dosya_tipi = strtolower(pathinfo($hedef_dosya, PATHINFO_EXTENSION));
 
+        $dizin2 = "http://localhost/certificate_me/images/sertifika_sablon_images/"; 
+        $hedef_dosya1 = $dizin2 . basename($_FILES["sertifika_sablonu"]["name"]); //resim dosya yolu (veritabanına eklenecek)
+        $hedef_dosya3 = "../../../images/sertifika_sablon_images/" . basename($_FILES["sertifika_sablonu"]["name"]);
+        $upload_kontrol = 1;
+        $dosya_tipi2 = strtolower(pathinfo($hedef_dosya1, PATHINFO_EXTENSION));
+
         $check = getimagesize($_FILES["afis_resmi"]["tmp_name"]);
-        if ($check = false) { //yüklenen dosya resim mi?
+        $check2 = getimagesize($_FILES["sertifika_sablonu"]["tmp_name"]);
+        if (($check == false) || ($check2 == false)) { //yüklenen dosya resim mi?
             header("Location: ../../../kurum/anasayfa/etkinlik_ekle.php?error=resimDegil&e_adi=".$e_adi."&e_aciklama=".$e_aciklama."&e_yer=".$e_yer."&konusmacilar_implode=".$konusmacilar_implode."&e_tarih=".$_POST['e_tarih']);
             exit();
         }
         
-        if (file_exists($hedef_dosya2)) { //resim halihazırda var mı?
+        if (file_exists($hedef_dosya2) || file_exists($hedef_dosya3)) { //resim halihazırda var mı?
             header("Location: ../../../kurum/anasayfa/etkinlik_ekle.php?error=resimVar&e_adi=".$e_adi."&e_aciklama=".$e_aciklama."&e_yer=".$e_yer."&konusmacilar_implode=".$konusmacilar_implode."&e_tarih=".$_POST['e_tarih']);
             exit();
         }
         
-        if($dosya_tipi != "jpg" && $dosya_tipi != "png" && $dosya_tipi != "jpeg") { //dosya tipi uygun mu? (jpg, png, jpeg)
+        if(($dosya_tipi != "jpg" && $dosya_tipi != "png" && $dosya_tipi != "jpeg") || ($dosya_tipi2 != "jpg" && $dosya_tipi2 != "png" && $dosya_tipi2 != "jpeg")) { //dosya tipi uygun mu? (jpg, png, jpeg)
             header("Location: ../../../kurum/anasayfa/etkinlik_ekle.php?error=dosyaTipiYanlis&e_adi=".$e_adi."&e_aciklama=".$e_aciklama."&e_yer=".$e_yer."&konusmacilar_implode=".$konusmacilar_implode."&e_tarih=".$_POST['e_tarih']);
             exit();
         }
-
-        if (!move_uploaded_file($_FILES["afis_resmi"]["tmp_name"], $hedef_dosya2)) {  //Dosya yüklerken bir sorun oluştu mu?
+        
+        $yuklendi_mi = move_uploaded_file($_FILES["afis_resmi"]["tmp_name"], $hedef_dosya2);
+        $yuklendi_mi2 = move_uploaded_file($_FILES["sertifika_sablonu"]["tmp_name"], $hedef_dosya3);
+        if (!$yuklendi_mi || !$yuklendi_mi2) {  //Dosya yüklerken bir sorun oluştu mu?
             header("Location: ../../../kurum/anasayfa/etkinlik_ekle.php?error=yuklemeSorunu&e_adi=".$e_adi."&e_aciklama=".$e_aciklama."&e_yer=".$e_yer."&konusmacilar_implode=".$konusmacilar_implode."&e_tarih=".$_POST['e_tarih']);
             exit();
         }
 
         //etkinlik ekleme islemi
-        $sql = "INSERT INTO etkinlik (etkinlik_adi, e_aciklama, tarih, yer, afis_resmi, e_guncel_mi) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO etkinlik (etkinlik_adi, e_aciklama, tarih, yer, afis_resmi, sertifika_sablonu, e_guncel_mi) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) { //SQL uygunluk kontrolü
             header("Location: ../../../kurum/anasayfa/etkinlik_ekle.php?error=sqlHatasi");
             exit();
         }
-        mysqli_stmt_bind_param($stmt, "sssssi",$e_adi, $e_aciklama, $e_tarih, $e_yer, $hedef_dosya, $kontrol);
+        mysqli_stmt_bind_param($stmt, "ssssssi",$e_adi, $e_aciklama, $e_tarih, $e_yer, $hedef_dosya, $hedef_dosya1, $kontrol);
         mysqli_stmt_execute($stmt); //etkinlik eklendi
 
         $sql = "SELECT * FROM etkinlik WHERE etkinlik_adi=?";
