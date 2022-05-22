@@ -39,34 +39,38 @@
         ?>
   
         <div class="etkinlikler">
-            <ul>
+            
                 <?php
                     while ($row = mysqli_fetch_assoc($result)) {
                     ?>
-                        <li>
-                            <div>
-                                <h2>
-                                    <?php echo $row['etkinlik_adi']; ?>
-                                </h2>                                
-                            </div>
-                            <div>
-                                <img src="<?php echo $row['afis_resmi']; ?>" alt="afiş_resmi">
-                                
-                                <p>
-                                    <?php echo $row['e_aciklama']; ?>
-                                </p>
-                                <form action="etkinlik_incele.php" method="post">
-                                    <input type="hidden" name="e_id" value="<?php echo $row['e_id'] ?>">
-                                    <button type="submit" name="etkinlik_incele_submit">Etkinliği incele</button>
-                                </form>
-                                
-                            </div>
-                            
-                        </li>
+                        <table border="10" align="left">
+                            <tr>
+                                <td>
+                                    <div>
+                                        <h2>
+                                            <?php echo $row['etkinlik_adi']; ?>
+                                        </h2>                                
+                                    </div>
+                                    <div>
+                                        <img src="<?php echo $row['afis_resmi']; ?>" alt="afiş_resmi">
+
+
+                                            <textarea cols="50" rows="10" style="resize: none;" readonly><?php echo $row['e_aciklama']; ?></textarea>
+
+                                        <form action="etkinlik_incele.php" method="post">
+                                            <input type="hidden" name="e_id" value="<?php echo $row['e_id'] ?>">
+                                            <button type="submit" name="etkinlik_incele_submit">Etkinliği incele</button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>    
+                        
                     <?php
                     }
                 ?>
-            </ul>
+           
         </div>
     </section>
 </main>
