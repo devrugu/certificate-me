@@ -23,7 +23,7 @@ body {
 #h {
     text-align: center;
     position: relative;
-    top:80px;
+    top:2em;
 }
 .co {
     display: flex;
@@ -33,8 +33,8 @@ body {
    width: 450px;
    height: 450px;
    position:absolute;
-   left: 500px;
-   top:200px;
+   left: 35%;
+   top:29%;
    border-radius: 2rem; /* radius borders*/
    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
  
@@ -58,24 +58,20 @@ top:45px;
 }
 #a_sifre{
     position: relative;
-    top:50px;
-    left:32px;
+    top:18%;
+    left:11%;
 }
 button{
 
 position: relative;
-top:90px;
+top:28%;
 }
 
 a {
     text-decoration: none;
     color: azure;
 }
-button.active {
-    background-color: aquamarine;
-    border-style: dashed;
-    cursor: pointer;
-}
+
 .circle,.circle1 {
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
@@ -85,14 +81,14 @@ button.active {
     border-radius: 50%;
 }
 .circle {
-    top:12%;
-    right: 27%;
+    top:18%;
+    right: 29%;
  
 
 }
 .circle1 {
-    bottom: 10%;
-    left: 27%;
+    bottom: 0%;
+    left: 29%;
 
 }
 .geri {

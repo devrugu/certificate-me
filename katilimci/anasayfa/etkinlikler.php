@@ -17,7 +17,8 @@
         }
     }
 ?>
-
+<html>
+<link rel="stylesheet" href="etkinlikler.css?v=<?php echo time(); ?>">
 <main>
     <section>
         <div>
@@ -78,3 +79,4 @@
 <?php
     //require "footer.php";
 ?>
+</html>

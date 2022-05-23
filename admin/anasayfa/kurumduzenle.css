@@ -7,6 +7,8 @@ html,body {
 }
 h1 {
     text-align: center;
+    position: relative;
+    top:4em;
 }
 .all { /*centering all of class*/
     
@@ -24,27 +26,9 @@ input{
     position: relative;
     left:50px;
 }
-.circle1,.circle{
-    background: white;
-    background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
-    height: 15rem;
-    width: 15rem;
-    position: absolute;
-    border-radius: 50%;
-   
 
-}
-.circle {
-    top:-25%;
-    right: -115%;
- 
 
-}
-.circle1 {
-    bottom: -25%;
-    left: -115%;
-
-}.co {
+.co {
     display: flex;
     justify-content: center; /* all items at the center through with flex and justify content */
     align-items: center;
@@ -53,7 +37,7 @@ input{
    height: 952px;
      
    position: absolute; /* centering the items */
-   top:97%;
+   top:115%;
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%,-50%);

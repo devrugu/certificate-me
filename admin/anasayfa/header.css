@@ -6,10 +6,12 @@ header {
     box-shadow: 0px 3px 10px rgba(0,0,0.2);
     position: sticky; /*fixed it */ 
     top:0px;
+    width: 100%;
     background:linear-gradient(to right top,#f46b45,#eea849);
 }
+
 nav {
-    min-height: 10vh;
+    min-height: 6em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,11 +29,11 @@ nav ul {
     
 }
 ul li {
-    margin-left: 120px; /*space between two li's */
+    margin-left: -20%; /*space between two li's */
 }
 .kurum {
     position: relative;
-    right:40px;
+    right:10%;
 }
 nav a {
     text-decoration: none;
@@ -39,8 +41,8 @@ nav a {
 }
 #button{
     position: relative;
-    top:-82px;
-    left:800px;
+    top:-2.5em;
+    left:61%;
     text-decoration: none;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -53,3 +55,7 @@ nav a {
 #button:hover {
   
   color: white; }
+  #logo {
+    position: relative;
+    top:1em;
+}

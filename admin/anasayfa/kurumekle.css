@@ -8,6 +8,8 @@ html,body {
 
 h1 {
     text-align: center;
+    position: relative;
+    top:4em;
 }
 .all { /*centering all of class*/
     
@@ -32,8 +34,8 @@ button{
 .circle1,.circle{
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
     position: absolute;
     border-radius: 50%;
    
@@ -65,7 +67,7 @@ button{
    height: 720px;
      
    position: absolute; /* centering the items */
-   top:80%;
+   top:100%;
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%,-50%);
