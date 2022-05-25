@@ -64,11 +64,11 @@
 
                 if (isset($_GET['e_aciklama'])) {
                     echo '<label for="e_aciklama">Etkinlik açıklaması:</label>';
-                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="10">'.$_GET['e_aciklama'].'</textarea>';
+                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="10" style="resize: none;">'.$_GET['e_aciklama'].'</textarea>';
                 }
                 else {
                     echo '<label for="e_aciklama">Etkinlik açıklaması:</label>';
-                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="10"></textarea>';
+                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="10" style="resize: none;"></textarea>';
                 }
 
                 if (isset($_GET['e_tarih'])) {
@@ -88,22 +88,22 @@
             <?php
                 if (isset($_GET['e_yer'])) {
                     echo '<label for="e_yer">Etkinlik yeri:</label>';
-                    echo '<textarea name="e_yer" id="e_yer" cols="30" rows="10">'.$_GET['e_yer'].'</textarea>';
+                    echo '<textarea name="e_yer" id="e_yer" cols="30" rows="10" style="resize: none;">'.$_GET['e_yer'].'</textarea>';
                 }
                 else {
                     echo '<label for="e_yer">Etkinlik yeri:</label>';
-                    echo '<textarea name="e_yer" id="e_yer" cols="30" rows="10"></textarea>';
+                    echo '<textarea name="e_yer" id="e_yer" cols="30" rows="10" style="resize: none;"></textarea>';
                 }
 
                 if (isset($_GET['konusmacilar_implode'])) {
                     echo '<label for="konusmacilar">Konuşmacı ekleyiniz:</label>';
                     echo '<sub>her konuşmacı arasına virgül koyunuz</sub>';
-                    echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10">'.$_GET['konusmacilar_implode'].'</textarea>';
+                    echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10" style="resize: none;">'.$_GET['konusmacilar_implode'].'</textarea>';
                 }
                 else {
                     echo '<label for="konusmacilar">Konuşmacı ekleyiniz:</label>';
                     echo '<sub>her konuşmacı arasına virgül koyunuz</sub>';
-                    echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10"></textarea>';
+                    echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10" style="resize: none;"></textarea>';
                 }
             ?>
             
@@ -118,8 +118,29 @@
             <label for="afis_resmi">Afiş resmi yükleyiniz:</label>
             <input type="file" name="afis_resmi" id="afis_resmi">
 
-            <label for="sertifika_sablonu">Sertifika Şablonu yükleyiniz:</label>
+            <h2>Sertifika Bilgileri</h2>
+            <label for="sertifika_sablonu">Sertifika Şablonu yükleyiniz<sub>(boş sertifika şablonu olmalı)</sub></label>
             <input type="file" name="sertifika_sablonu" id="sertifika_sablonu">
+
+            <?php
+                if (isset($_GET['sertifika_adi'])) {
+                    echo '<label for="sertifika_adi">Sertifika adı:</label>';
+                    echo '<input type="text" name="sertifika_adi" id="sertifika_adi" value='.$_GET['sertifika_adi'].'>';
+                }
+                else {
+                    echo '<label for="sertifika_adi">Sertifika adı:</label>';
+                    echo '<input type="text" name="sertifika_adi" id="sertifika_adi">';
+                }
+
+                if (isset($_GET['sertifika_metni'])) {
+                    echo '<label for="sertifika_metni">Sertifika metni:</label>';
+                    echo '<textarea name="sertifika_metni" id="sertifika_metni" cols="30" rows="10" style="resize: none;">'.$_GET['sertifika_metni'].'</textarea>';
+                }
+                else {
+                    echo '<label for="sertifika_metni">Sertifika metni:</label>';
+                    echo '<textarea name="sertifika_metni" id="sertifika_metni" cols="30" rows="10" style="resize: none;"></textarea>';
+                }
+            ?>
 
             <button type="submit" name="etkinlik_ekle_submit"id="ekle">ekle</button> </div> </div>
         </form>   <div class="circle"> </div>

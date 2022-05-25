@@ -1,5 +1,6 @@
 <?php
     require "header.php";
+    //session_start();
     include_once '../../includes/i_database_handler/dbh.inc.php';
     date_default_timezone_set('Europe/Istanbul');
 ?>
@@ -59,14 +60,7 @@
                     
                     while($row = mysqli_fetch_assoc($result)){
 
-                        if (strtotime($row['tarih']."+2 day") < time()) {
-                            $sql5 = "DELETE FROM etkinlik WHERE e_id=".$e_id; mysqli_query($conn, $sql5);
-                            $sql5 = "DELETE FROM svb_etkinlik WHERE e_id=".$e_id; mysqli_query($conn, $sql5);
-                            $exploded_path = array();
-                            $exploded_path = explode("/", $row['afis_resmi']);
-                            $fp = unlink("../../images/etkinlik_images/".end($exploded_path));
-                            continue;
-                        }
+                        
                         
                         if (strtotime($row['tarih']) < time()) {
                             $sql2 = "UPDATE etkinlik SET e_guncel_mi=0 WHERE e_id=".$e_id;
@@ -173,9 +167,16 @@
                             
                             echo '<td>';
                             echo '<p style="color: red;">Etkinlik güncel değil</p>';
+
+                            echo '<form action="sertifika_belirle.php" method="post">';
+                                echo '<input type="hidden" name="et_id" value="'.$e_id.'">';
+                                echo '<button type="submit" name="sertifika_belirle_submit">Sertifika ver</button>';
+                            echo '</form>';
+
                             echo '</td>';
                             
-                            echo '<td>'; echo '<sub style="color: red;">--etkinlik saatinden 2 gün sonra otomatik silinecektir--</sub>'; echo '</td>';
+                            
+                            
                             
                         }
 

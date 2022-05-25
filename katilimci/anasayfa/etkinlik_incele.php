@@ -17,7 +17,26 @@
         }
     }
 
-    if (isset($_POST['etkinlik_incele_submit'])) {
+    if (isset($_GET['success'])) {
+        $successCheck = $_GET['success'];
+        switch ($successCheck) {
+            case 'kayitBasarili':
+                echo '<p>Etkinliğe kaydınız başarı ile yapılmıştır.</p>';
+                break;
+        }
+    }
+    else if (isset($_GET['error'])) {
+        $errorCheck = $_GET['error'];
+        switch ($errorCheck) {
+            case 'zamanAyni':
+                echo '<p>Aynı zaman diliminde başka bir etkinliğiniz var!</p>';
+                break;
+            case 'sqlHatasi':
+                echo '<p>Bir sorun oluştu tekrar deneyiniz!</p>';
+                break;
+        }
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,11 +44,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etkinlik İncele</title>
 </head>
 <body>
     <?php
-        $e_id = $_POST['e_id'];
+        if (isset($_POST['e_id'])) {
+            $_SESSION['e_id'] = $_POST['e_id'];
+        }
+        $e_id = $_SESSION['e_id'];
         $sql = "SELECT e_id, etkinlik_adi, e_aciklama, tarih, yer, afis_resmi, e_guncel_mi FROM etkinlik WHERE e_id=".$e_id.";";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
@@ -150,6 +172,3 @@
     
 </body>
 </html>
-<?php
-    }
-?>

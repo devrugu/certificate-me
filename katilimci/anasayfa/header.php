@@ -21,6 +21,7 @@
                 <li><a href="katilimci_anasayfa.php">Ana Sayfa</a></li>
                 <li><a href="etkinlikler.php">Etkinlikler</a></li>
                 <li><a href="sertifikalar.php">Sertifikalarım</a></li>
+                <li><a href="etkinliklerim.php">Etkinliklerim</a></li>
             </ul>
             <div>
                 <form action="../../includes/i_katilimci/i_anasayfa_katilimci/katilimci_cikis.inc.php" method="POST">

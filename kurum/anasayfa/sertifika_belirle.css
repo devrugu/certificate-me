@@ -1,0 +1,15 @@
+#image {
+    
+    
+    border: solid 1px red;
+    background-color: blue;
+    cursor: pointer;
+    position: relative;
+}
+
+
+#rect {
+    border: solid 2px red;
+    pointer-events: none;
+    display: none;
+}
