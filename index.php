@@ -18,7 +18,9 @@
             <a href="katilimci/katilimci_giris.php"> <div class="tab"><img src="images/books.png" > </a> 
             <a href="katilimci/katilimci_giris.php" > <h1  > Katılımcı Girişi </h1> </div></a> 
             <a href="kurum/kurum_giris.php"  > <div class="tab"><img src="images/building-4052951_640.png " > </a>
-            <a href="kurum/kurum_giris.php" ><h1> Kurum Girişi </h1> </div>  </a>  </blockquote> </div> 
+            <a href="kurum/kurum_giris.php" ><h1> Kurum Girişi </h1> </div>  </a>
+            <a href="sertifika/sertifika_dogrula.php"> <div class="tab"><img src="images/check-mark-tick-vector-graphic-21.png"></a>
+            <a href="sertifika/sertifika_dogrula.php"> <h1>Sertifika Doğrula</h1></div></a>  </blockquote> </div> 
                  
 </section>       </main> </div>
             <div class="start">

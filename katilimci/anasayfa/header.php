@@ -15,7 +15,7 @@
     <header>
         <nav>
             <a href="katilimci_anasayfa.php">
-                <img src="../../images/tuu.png" alt="logo"id="logo">
+                <img src="../../images/tuu.png" alt="logo"id="logo" class="img">
             </a>
             <ul>
                 <li><a href="katilimci_anasayfa.php">Ana Sayfa</a></li>
