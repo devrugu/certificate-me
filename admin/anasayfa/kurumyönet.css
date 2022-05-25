@@ -20,8 +20,8 @@ tr:hover { /* when mouseover changes the color tr s */
 }
 #kurumek {
     position: relative;
-    top:-115px;
-    left:600px;
+    top:-4em;
+    left:27em;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;

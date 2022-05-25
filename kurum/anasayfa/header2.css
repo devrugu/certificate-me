@@ -9,6 +9,7 @@ header {
     top:0px;
     background:linear-gradient(to right top,#f46b45,#eea849);
     height: 140px;
+    width: 100%;
 }
 nav {
    min-height: 10vh;
@@ -30,11 +31,11 @@ nav ul {
     
 }
 ul li {
-    margin-left: 120px; /*space between two li's */
+    margin-left: -20%; /*space between two li's */
 }
 .kurum {
     position: relative;
-    right:40px;
+    right:10%;
 }
 nav a {
     text-decoration: none;
@@ -46,8 +47,8 @@ height: 150px;
 }
 #çıkış2{
     position: relative;
-    top:-94px;
-    left:750px;
+    top:-3em;
+    left:61%;
    
     text-decoration: none;
     cursor: pointer;
@@ -61,3 +62,8 @@ height: 150px;
 #çıkış2:hover {
   
     color: white; }
+    #logo {
+        position: relative;
+        top:0em;
+        height: 130px;
+    }

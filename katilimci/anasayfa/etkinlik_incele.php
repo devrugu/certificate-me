@@ -44,7 +44,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Etkinlik İncele</title>
+
+    <link rel="stylesheet" href="incele.css?v=<?php echo time(); ?>">
+    <title>Document</title>
+
 </head>
 <body>
     <?php
@@ -157,14 +162,27 @@
                     </div>
                     
                 </div>
-
-                <div class="kayıt_ol">
-                    <form action="../../includes/i_katilimci/i_anasayfa_katilimci/etkinlik_kayit.inc.php" method="post">
-                        <input type="hidden" name="katilimci_id" value="<?php echo $_SESSION['ka_id']; ?>">
-                        <input type="hidden" name="etkinlik_id" value="<?php echo $e_id; ?>">
-                        <button type="submit" name="etkinlik_kayit_submit">Etkinliğe kayıt ol</button>
-                    </form>
-                </div>
+                <?php
+                    $sql6 = "SELECT * FROM katilimci_etkinlik WHERE k_id=".$_SESSION['ka_id']." AND e_id=".$e_id;
+                    $result6 = mysqli_query($conn, $sql6);
+                    if (mysqli_num_rows($result6) == 0) {
+                        ?>
+                            <div class="kayıt_ol">
+                            <form action="../../includes/i_katilimci/i_anasayfa_katilimci/etkinlik_kayit.inc.php" method="post">
+                                <input type="hidden" name="katilimci_id" value="<?php echo $_SESSION['ka_id']; ?>">
+                                <input type="hidden" name="etkinlik_id" value="<?php echo $e_id; ?>">
+                                <button type="submit" name="etkinlik_kayit_submit">Etkinliğe kayıt ol</button>
+                            </form>
+                            </div>
+                        <?php
+                    }
+                    else {
+                        ?>
+                        <p style="color: green;">Etkinliğe kaydınız yapılmıştır</p>
+                        <?php
+                    }
+                ?>
+                
             </section>
     <?php
         }

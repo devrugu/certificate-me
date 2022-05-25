@@ -21,7 +21,7 @@
     <header>
         <nav>
             <a href="admin_anasayfa.php">
-                <img src="../../images/tuu.png" alt="logo" width="130" height="130">
+                <img src="../../images/tuu.png" alt="logo" width="130" height="130"id="logo">
             </a>
             <ul>
                 <li><a href="admin_anasayfa.php"><span onclick='this.style.color="red"'>Ana Sayfa</span></a></li>

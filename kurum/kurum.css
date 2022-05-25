@@ -28,7 +28,7 @@ body {
 #h {
     text-align: center;
     position: relative;
-    top:80px;
+    top:2em;
 }
 .co {
     display: flex;
@@ -38,8 +38,8 @@ body {
    width: 450px;
    height: 450px;
    position:absolute;
-   left: 500px;
-   top:200px;
+   left: 35%;
+   top:25%;
    border-radius: 2rem; /* radius borders*/
    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
  
@@ -80,22 +80,22 @@ a {
 .circle1,.circle{
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
     position: absolute;
     border-radius: 50%;
    
 
 }
 .circle {
-    top:15%;
-    right: 28%;
+    top:18%;
+    right: 33%;
  
 
 }
 .circle1 {
-    bottom: 10%;
-    left: 28%;
+    bottom: 12%;
+    left: 30%;
 
 } 
 #gerit {

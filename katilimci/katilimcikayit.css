@@ -21,7 +21,7 @@ body {
 #h { /*  kayıt ol text */
     text-align: center;
     position: relative;
-    top:35px;
+    top:10%;
     font-size: 3rem;
 }
 
@@ -96,8 +96,8 @@ input {
 .circle1,.circle{
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
-    height: 13rem;
-    width: 13rem;
+    height: 10rem;
+    width: 10rem;
     position: absolute;
     border-radius: 50%;
    

@@ -22,7 +22,7 @@ body {
 #h { /*  kayıt ol text */
     text-align: center;
     position: relative;
-    top:10px;
+    top:10%;
 }
 
 
@@ -31,7 +31,7 @@ button{
     position: relative;
     top:10px;
     left:400px;
-   font-size: 40px;
+   font-size: 35px;
    
 
     }
@@ -68,11 +68,11 @@ input {
 .coc {
     box-shadow: 0 10px 100px rgba(0,0,0.2),0 0px 20px rgba(0,0,0.2); /*shadows up and down */
     width:750px;
-    height: 1250px;
+    height: 1170px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top:40px;
+    top:4em;
    
 }
 

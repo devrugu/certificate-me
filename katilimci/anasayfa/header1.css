@@ -28,7 +28,7 @@ nav ul {
     
 }
 ul li {
-    margin-left: 120px; /*space between two li's */
+    margin-left: 35%; /*space between two li's */
 }
 .kurum {
     position: relative;
@@ -44,8 +44,8 @@ height: 150px;
 }
 #button {
     position: relative;
-    top:0px;
-    left:-70px;
+    top:-0.5em;
+    left:-80%;
    
     text-decoration: none;
     cursor: pointer;
