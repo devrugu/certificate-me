@@ -4,7 +4,7 @@
     border: solid 1px red;
     background-color: blue;
     cursor: pointer;
-    position: relative;
+ 
 }
 
 
@@ -12,4 +12,14 @@
     border: solid 2px red;
     pointer-events: none;
     display: none;
+}
+html,body {
+    background-color: black;
+    color: white;
+}
+.image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }

@@ -15,6 +15,7 @@
             while ($row = mysqli_fetch_Assoc($result)) {
                 $sertifika_sablonu = $row['sertifika_sablonu'];
             }
+         
             $original_info = getimagesize($sertifika_sablonu);
             $original_w = $original_info[0];
             $original_h = $original_info[1];

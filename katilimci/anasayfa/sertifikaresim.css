@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+#resim {
+    height:30em;
+    width: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:1em;
+   
+}

@@ -11,7 +11,7 @@ header {
 }
 
 nav {
-    min-height: 6em;
+  height: 5.5em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ nav a {
 #button{
     position: relative;
     top:-2.5em;
-    left:61%;
+    left:11%;  
     text-decoration: none;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -57,5 +57,5 @@ nav a {
   color: white; }
   #logo {
     position: relative;
-    top:1em;
+    top:1.1em;
 }

@@ -29,12 +29,12 @@
             </ul>
             
         </nav>
-    </header>
+    
     <script src="header.js"> </script>
     <div>
                 <form action="../../includes/i_admin/i_anasayfa_admin/admin_cikis.inc.php" method="POST">
                 <button type="submit" name="admin_cikis_submit" id="button">Çıkış yap</button>
                 </form>
-            </div>
+            </div> </header>
 </body>
 </html>

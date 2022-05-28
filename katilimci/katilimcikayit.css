@@ -11,10 +11,10 @@ body {
    
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    min-height: 100vh;
- 
-  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+ background-color: black;
+  /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
 
-  
+  color:white;
   
     
 }
@@ -125,7 +125,7 @@ input {
     animation: blink 5s infinite;
     -webkit-animation: blink 4s infinite;
     position: relative;
-    top:-70px;
+    top:-2em;
 }
 @-webkit-keyframes blink {
     20%,

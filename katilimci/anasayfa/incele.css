@@ -1,6 +1,8 @@
-html {
-    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+html,body {
+    /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
+    background-color: black;
     min-height: 150%;
+    color:white;
 }
 .birim table {
    
@@ -12,13 +14,13 @@ html {
     }
 
   
-  .birim table:before, .birim table:after {
+  /*.birim table:before, .birim table:after {
     content: '';
     position: absolute;
     left: -2px;
     top: -2px;
     background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-      #0000ff, #00ff00,#ffff00, #ff0000);
+      #0000ff);
       background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -37,7 +39,7 @@ html {
     100% {
       background-position: 0 0;
     }
-  }
+  }*/
   
   .birim table:after {
     filter: blur(50px);
@@ -58,4 +60,9 @@ html {
    position: relative;
    left: 35%;
   right: 50%;
+  }
+  #kayıt {
+    position: relative;
+    bottom:-25em;
+    
   }

@@ -4,11 +4,15 @@ table {
   
    margin-top: 10%;
    border-collapse: collapse;
-   
+   border-color: rgb(255, 80, 121) green blue; /* top row column colors */
 }
+
 body {
-    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    background: black;
+    color:white;
+    
 }
+
 td {
     padding: 15px;
     text-align:left;
@@ -20,8 +24,8 @@ tr:hover { /* when mouseover changes the color tr s */
 }
 #kurumek {
     position: relative;
-    top:-4em;
-    left:27em;
+    top:-3.8em;
+    left:38em;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;

@@ -1,0 +1,94 @@
+html,body{
+  background-color: black;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: azure;
+}
+a {
+  font-size: 6vh;
+  line-height: 6vh;
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: "Sacramento", cursive;
+
+  animation: blink 5s infinite;
+  -webkit-animation: blink 4s infinite;
+}
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ff00ae, 0 0 15px #ff00ae, 0 0 20px #ff00ae, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+      text-shadow: 0 0 5px #ff00ae, 0 0 15px #ff00ae, 0 0 20px #ff00ae, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  } }
+p{
+  text-align: center;
+  position: relative;
+  top:10px;
+}
+
+form {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /*use that for center all*/
+  
+   }
+   label {
+     font-size: 1.5rem;
+   }
+   a {
+     font-size: 1.5rem;
+   }
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+ }
+#indir {
+  position: absolute;
+  right:1.5em;
+  bottom:1em;
+}

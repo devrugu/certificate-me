@@ -8,10 +8,11 @@ header {
     position: sticky; /*fixed it */ 
     top:0px;
     background:linear-gradient(to right top,#f46b45,#eea849);
+  
 }
 nav {
     min-height: 10vh;
-    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: space-between; /* throws everything left and right sides(logo and text) */
@@ -25,6 +26,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    right:15%;
     
 }
 ul li {
@@ -45,7 +48,7 @@ height: 150px;
 #button {
     position: relative;
     top:-0.5em;
-    left:-80%;
+    left:-40em;
    
     text-decoration: none;
     cursor: pointer;

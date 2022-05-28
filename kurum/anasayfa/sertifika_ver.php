@@ -5,6 +5,7 @@
 ?>
 
 <main>
+<link rel="stylesheet" href="sertver.css?v=<?php echo time(); ?>">
     <?php
         if (isset($_POST['sertifika_ver_submit']) || isset($_SESSION['etk_id'])) {
             echo '<h1>Etkinliğe kayıt olan katılımcılar</h1>';

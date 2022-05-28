@@ -17,8 +17,9 @@ body {
  
  
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- background: linear-gradient(to right top,#65dfc9,#6cdbeb);
-  
+ background-color: black;
+ /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
+  color:white;
 }
 #h {
   text-align: center;

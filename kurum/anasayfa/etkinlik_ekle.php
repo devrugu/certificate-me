@@ -97,17 +97,17 @@
 
                 if (isset($_GET['konusmacilar_implode'])) {
                     echo '<label for="konusmacilar">Konuşmacı ekleyiniz:</label>';
-                    echo '<sub>her konuşmacı arasına virgül koyunuz</sub>';
+                    echo '<sub id="virgül">her konuşmacı arasına virgül koyunuz</sub>';
                     echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10" style="resize: none;">'.$_GET['konusmacilar_implode'].'</textarea>';
                 }
                 else {
                     echo '<label for="konusmacilar">Konuşmacı ekleyiniz:</label>';
-                    echo '<sub>her konuşmacı arasına virgül koyunuz</sub>';
+                    echo '<sub id="virgül">her konuşmacı arasına virgül koyunuz</sub>';
                     echo '<textarea name="konusmacilar" id="konusmacilar" cols="30" rows="10" style="resize: none;"></textarea>';
                 }
             ?>
             
-            <input type="checkbox" id="kontrol">Etkinlik ortak yapılıyor.
+            <input type="checkbox" id="kontrol"><div class="ortak">Etkinlik ortak yapılıyor. </div>
             <label for="diger_kurumlar" id="diger_kurumlar_label">Kurum(ları) seçiniz:</label>
             <select name="diger_kurumlar[]" id="diger_kurumlar" multiple>
                 <?php $res=mysqli_query($conn, "SELECT svb_id,birim_adi FROM sertifika_veren_birim WHERE NOT (svb_id=".$_SESSION['svb_id'].")");

@@ -6,6 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="sertifikaresim.css?v=<?php echo time(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +22,8 @@
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
         ?>
-            <img src="<?php echo $row['sertifika_resmi'] ?>">
+       
+            <img src="<?php echo $row['sertifika_resmi'] ?> "id="resim"> 
         <?php
         }
     }

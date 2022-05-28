@@ -2,7 +2,7 @@
     session_start();
     include_once '../includes/i_database_handler/dbh.inc.php';
     date_default_timezone_set('Europe/Istanbul');
-?>
+?><link rel="stylesheet" href="dogrula.css?v=<?php echo time(); ?>">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +27,10 @@
                     $sertifika_resmi = $row['sertifika_resmi'];
                 }
             ?>  
-                <a href="sertifika_dogrula.php">Geri</a>
+                <a href="sertifika_dogrula.php"id="gerit">Geri</a>
                 <h4 style="color: green;">Sertifika Doğrulandı</h4>
                 <img src="<?php echo $sertifika_resmi; ?>">
-                <a href="../includes/i_sertifika_dogrula/sertifika_dogrula.inc.php?path=<?php echo $sertifika_resmi; ?>">Sertifikayı indir</a>
+                <a href="../includes/i_sertifika_dogrula/sertifika_dogrula.inc.php?path=<?php echo $sertifika_resmi; ?>"id="indir">Sertifikayı indir</a>
             <?php
             }
         }

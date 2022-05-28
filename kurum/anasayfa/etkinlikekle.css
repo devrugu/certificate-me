@@ -6,15 +6,16 @@ form {
 }
 html, body {
     min-height: 200%; /* increasing page div height */
+    background-color: black;
 }
 body {
    
-   
+   color:white;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    min-height: 100vh;
  
-  background: linear-gradient(to right top,#65dfc9,#6cdbeb);
 
+   /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
   
   
     
@@ -23,6 +24,7 @@ body {
     text-align: center;
     position: relative;
     top:10%;
+    color:white;
 }
 
 
@@ -54,7 +56,7 @@ label {
     position: relative;
     left: 200px;
     top:5px;
-    
+    color:white;
     margin-bottom: 10px;  /*for distances */
    
 }
@@ -103,4 +105,19 @@ textarea{
     bottom: -100%;
     left: 18%;
 
+}
+
+
+h2{
+    position: relative;
+    left: 220px;
+}
+
+#virgül {
+    position: relative;
+    left:200px;
+}
+.ortak {
+    position: relative;
+    left: 200px;
 }
