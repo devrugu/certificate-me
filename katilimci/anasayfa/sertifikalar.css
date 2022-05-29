@@ -1,6 +1,6 @@
 html {
     
-    background-color: black;
+    background-color: #24252A;
 }
 table {
     background-color: rgba(169, 169, 169, 0.707);
@@ -49,5 +49,11 @@ table {
     height: 3em;
   
    
+  }
+
+  .metindiv{
+    width: 400px;
+    height: 150px;
+    
   }
   

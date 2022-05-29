@@ -1,0 +1,38 @@
+main{ 
+    text-align: center;
+ 
+ }
+ html {
+     /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
+     background-color: #24252A;
+     color:white;
+ }
+ textarea{
+     box-sizing: border-box;
+     border: 2px solid red;
+     border-radius: 4px;
+     background:linear-gradient(to right top,#f46b45,#eea849);
+     color:white;
+     font-family: 'Roboto', sans-serif;
+     font-size: 1rem;
+     line-height: 0.8em;
+     width: 8em;
+     outline: none; /* dış çeperlerde mavi rengi kaldırmak*/
+    
+     /*overflow-y: scroll;
+     height: 100px;
+     resize: none;
+     scrollbar-color: #249de4 #f5f5f5; */
+ } 
+ table {
+     background-color: #682961;
+     border: 7px solid;
+     border-radius: 1em;
+     margin-right: 50px;
+   
+     position: relative;
+        width: 150px;
+        height: 50px;
+         
+       
+ }

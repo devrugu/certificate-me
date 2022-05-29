@@ -23,14 +23,14 @@
             <table border="5" align="left">
                 <tr>
                     <td>
-                        <b>Sertifika adı: </b><?php echo $row['sertifika_adi'] ?><br>
-                        <b>Sertifika metni: </b><textarea cols="50" rows="10" style="resize: none;" readonly><?php echo $row['sertifika_metni'] ?></textarea><br>
+                        <b>Sertifika adı: </b><?php echo $row['sertifika_adi'] ?><br><br>
+                        <b>Sertifika metni: </b><div class="metindiv"><?php echo $row['sertifika_metni'] ?></div><br>
                         <b>Verildiği Etkinlik:</b><?php $sql2="SELECT * FROM etkinlik WHERE e_id=".$row['verilen_etkinlik'];
                                                         $result2 = mysqli_query($conn, $sql2);
                                                         while ($row2 = mysqli_fetch_assoc($result2)) {
                                                             echo $row2['etkinlik_adi'];
-                                                        } ?><br>
-                        <b>Sertifika kodu: </b><?php echo $row['sertifika_kodu']; ?><br>
+                                                        } ?><br><br>
+                        <b>Sertifika kodu: </b><?php echo $row['sertifika_kodu']; ?><br><br>
                         <form action="sertifika_resmi.php" method="post">
                             <input type="hidden" name="e_id" value="<?php echo $row['verilen_etkinlik']; ?>">
                             <button type="submit" name="sertifika_resmi_submit">Sertifikayı Görüntüle</button>

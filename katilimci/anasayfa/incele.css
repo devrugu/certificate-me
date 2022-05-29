@@ -1,6 +1,6 @@
 html,body {
     /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
-    background-color: black;
+    background-color: #24252A;
     min-height: 150%;
     color:white;
 }
@@ -41,28 +41,51 @@ html,body {
     }
   }*/
   
-  .birim table:after {
-    filter: blur(50px);
-  }
-  #kayt {
-      position: relative;
-      top:28em;
-  }
-  section {
-      text-align: center;
-  }
+  
+
   .konusmacilar table {
       display: flex;
       align-items: center;
       justify-content: center;
   }
-  .birim {
+  /*.birim {
    position: relative;
    left: 35%;
   right: 50%;
-  }
-  #kayıt {
-    position: relative;
-    bottom:-25em;
-    
-  }
+  }*/
+ 
+
+.detaylar{
+  text-align: center;
+  width: 500px;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.color{
+  background-color: #24252A;
+  color: #edf0f1;
+  border: #24252A;
+}
+.kayıt_ol{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+#kayıt{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.edb{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.svb{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}

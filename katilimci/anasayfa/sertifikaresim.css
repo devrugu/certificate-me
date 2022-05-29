@@ -1,9 +1,7 @@
 body{
-    background-color: black;
+    background-color: #24252A;
 }
 #resim {
-    height:30em;
-    width: 30em;
     display: block;
     margin-left: auto;
     margin-right: auto;

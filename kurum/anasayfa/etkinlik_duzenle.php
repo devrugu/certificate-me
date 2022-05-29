@@ -11,41 +11,41 @@
 
                 switch ($errorCheck) {
                     case 'bos':
-                        echo '<p>Tüm alanları doldurunuz!</p>';
+                        echo '<p style="color: red;">Tüm alanları doldurunuz!</p>';
                         break;
                     case 'etkinlikVar':
-                        echo '<p>Girdiğiniz etkinlik zaten var!</p>';
+                        echo '<p style="color: red;">Girdiğiniz etkinlik zaten var!</p>';
                         break;
                     case 'yanlisTarihZaman':
-                        echo '<p>Geçerli bir tarih ve zaman giriniz!</p>';
+                        echo '<p style="color: red;">Geçerli bir tarih ve zaman giriniz!</p>';
                         break;
                     case 'yerZamanAyni':
-                        echo '<p>Aynı yerde ve aynı zamanda farklı bir etkinlik var!</p>';
+                        echo '<p style="color: red;">Aynı yerde ve aynı zamanda farklı bir etkinlik var!</p>';
                         break;
                     case 'konusmaciHatasi':
-                        echo '<p>Konuşmacıları doğru giriniz (Her konuşmacı arasında bir virgül olması gerekiyor)!</p>';
+                        echo '<p style="color: red;">Konuşmacıları doğru giriniz (Her konuşmacı arasında bir virgül olması gerekiyor)!</p>';
                         break;
                     case 'sqlHatasi':
-                        echo '<p>Veritabanında bir sorun oluştu!</p>';
+                        echo '<p style="color: red;">Veritabanında bir sorun oluştu!</p>';
                         break;
                     case 'resimDegil':
-                        echo '<p>Yüklenen dosya resim dosyası değil!</p>';
+                        echo '<p style="color: red;">Yüklenen dosya resim dosyası değil!</p>';
                         break;
                     case 'resimVar':
-                        echo '<p>Farklı bir resim yükleyiniz(yüklenen resim zaten var)!</p>';
+                        echo '<p style="color: red;">Farklı bir resim yükleyiniz(yüklenen resim zaten var)!</p>';
                         break;
                     case 'dosyaTipiYanlis':
-                        echo '<p>Yüklenecek resmin dosya tipi jpg, png veya jpeg olabilir!</p>';
+                        echo '<p style="color: red;">Yüklenecek resmin dosya tipi jpg, png veya jpeg olabilir!</p>';
                         break;
                     case 'yuklemeSorunu':
-                        echo '<p>Resim yüklenirken bir sorun oluştu. Tekrar deneyin!</p>';
+                        echo '<p style="color: red;">Resim yüklenirken bir sorun oluştu. Tekrar deneyin!</p>';
                         break;
                 }
             }
             else if (isset($_GET['success']))
             {
                 if ($_GET['success'] == 'etkinlikGuncellemeBasarili') {
-                    echo '<p>Etkinlik başarı ile Güncellendi.</p>';
+                    echo '<p style="color: green;">Etkinlik başarı ile Güncellendi.</p>';
                 }
             }
         ?><div class="co">
@@ -70,8 +70,8 @@
                     echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="7">'.$e_aciklama.'</textarea>';
                 } 
                 else {
-                    echo '<label for="e_aciklama">Birim hakkında açıklama:</label>';
-                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="30" rows="7">'.$_POST['etkinlik_aciklama'].'</textarea>';
+                    echo '<label for="e_aciklama">Etkinlik açıklaması:</label>';
+                    echo '<textarea name="e_aciklama" id="e_aciklama" cols="40" rows="15">'.$_POST['etkinlik_aciklama'].'</textarea>';
                 }
 
                 if (isset($_GET['e_tarih'])) {
@@ -107,14 +107,14 @@
                 }
                 if (isset($_POST['etkinlik_afis_resmi'])) {
                     echo '<label for="afis_resmi">Afiş resmi:</label>';
-                    echo '<img src="'.$_POST['etkinlik_afis_resmi'].'" id="afis_resmi">';
+                    echo '<img src="'.$_POST['etkinlik_afis_resmi'].'" id="afis_resmi" width="400" height="550">';
                     echo '<label for="afis_resmi_yukle">Yeni resim yükle:</label>';
                     echo '<input type="file" name="afis_resmi_yukle" id="afis_resmi_yukle">';
                     echo '<input type="hidden" name="afis_resmi" value="'.$_POST['etkinlik_afis_resmi'].'">';
                 }
                 else {
                     echo '<label for="afis_resmi">Afiş resmi:</label>';
-                    echo '<img src="'.$_GET['etkinlik_afis_resmi'].'" id="afis_resmi">';
+                    echo '<img src="'.$_GET['etkinlik_afis_resmi'].'" id="afis_resmi" width="400" height="550">';
                     echo '<label for="afis_resmi_yukle">Yeni resim yükle:</label>';
                     echo '<input type="file" name="afis_resmi_yukle" id="afis_resmi_yukle">';
                     echo '<input type="hidden" name="afis_resmi" value="'.$_GET['etkinlik_afis_resmi'].'">';

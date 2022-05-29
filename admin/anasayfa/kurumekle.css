@@ -4,14 +4,15 @@ label {
 }
 html,body {
     min-height: 150%;
-    background-color: black;
-    color:white;
+    background-color: #24252A;
+    color:#edf0f1;
 }
 
 h1 {
     text-align: center;
     position: relative;
     top:4em;
+    color: #edf0f1;
 }
 .all { /*centering all of class*/
     
@@ -25,15 +26,16 @@ body {
     /*background: linear-gradient(to right top,#65dfc9,#6cdbeb);*/
 }
 input {
+    color:#edf0f1;
     position: relative;
     left:50px;
-    background:linear-gradient(to right top,#f46b45,#eea849);
+    background:linear-gradient(to right top,#24252A,#24252A);
 }
 button{
     position: relative;
     left:50px;
     top:40px;
-    color:darkgreen;
+    color: #24252A;
 }
 .circle1,.circle{
     background: white;
@@ -66,7 +68,7 @@ button{
     display: flex;
     justify-content: center; /* all items at the center through with flex and justify content */
     align-items: center;
-    background-color: white;
+    background-color: #edf0f1;
    width: 720px;
    height: 720px;
      
@@ -86,10 +88,10 @@ button{
 }
 textarea{
     box-sizing: border-box;
-    border: 2px solid red;
+    border: 2px solid rgba(255,255,255,0.3);
     border-radius: 4px;
-    background:linear-gradient(to right top,#f46b45,#eea849);
-    color:white;
+    background:linear-gradient(to right top,#24252A,#24252A);
+    color:#edf0f1;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.8em;
@@ -104,5 +106,11 @@ textarea{
     left:20px;
 } 
 label {
-    color:darkgreen;
+    color:rgb(0, 0, 0);
+}
+p.error{
+    color: red;
+}
+p.success{
+    color: green;
 }

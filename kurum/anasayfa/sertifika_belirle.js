@@ -45,7 +45,7 @@
         rectDiv.style.height = (rect.y1 - rect.y0) + 'px';
 
         var boundsDiv = document.getElementById('bounds');
-        boundsDiv.innerText = 'crop rect: ' + rect.x0 + ',' + rect.y0 + ' to ' + rect.x1 + ',' + rect.y1;
+        boundsDiv.innerText = 'crop rect: ' + rect.x0 + ',' + rect.y0 + ' to ' + rect.x1 + ',' + rect.y1
 
         document.getElementById('x0').value = rect.x0;
         document.getElementById('y0').value = rect.y0;

@@ -5,7 +5,7 @@
     if (isset($_POST['sertifika_ver_submit'])) {
         $e_id = $_POST['etkin_id']; //verilen etkinlik
         $k_id = $_POST['kat_id'];   //sertifikayi alan kisi
-        $x0 = $_POST['x0']-8;
+        $x0 = $_POST['x0']-461;
         $y0 = $_POST['y0']-8;
         $x1 = $_POST['x1']-8;
         $y1 = $_POST['y1']-8;

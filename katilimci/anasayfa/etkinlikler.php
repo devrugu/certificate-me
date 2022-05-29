@@ -53,10 +53,10 @@
                                         </h2>                                
                                     </div>
                                     <div>
-                                        <img src="<?php echo $row['afis_resmi']; ?>" alt="afiş_resmi">
+                                        <img src="<?php echo $row['afis_resmi']; ?>" alt="afiş_resmi" width="400" height="550">
 
 
-                                            <textarea cols="50" rows="10" style="resize: none;" readonly><?php echo $row['e_aciklama']; ?></textarea>
+                                            <p><?php echo $row['e_aciklama']; ?></p>
 
                                         <form action="etkinlik_incele.php" method="post">
                                             <input type="hidden" name="e_id" value="<?php echo $row['e_id'] ?>">

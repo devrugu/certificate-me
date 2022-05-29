@@ -4,11 +4,11 @@ table {
   
    margin-top: 10%;
    border-collapse: collapse;
-   border-color: rgb(255, 80, 121) green blue; /* top row column colors */
+   border-color: rgb(22, 87, 22) rgb(22, 87, 22) rgb(22, 87, 22); /* top row column colors */
 }
 
 body {
-    background: black;
+    background: #24252A;
     color:white;
     
 }

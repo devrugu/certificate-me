@@ -1,13 +1,13 @@
 html,body {
-    background-color: black;
-    color: white;
+    background-color: #24252A;
+    color: #edf0f1;
 }
 h1{
     text-align: center;
 }
 table {
     border-color:#f46b45;
-    color:black;
-    background-color: white;
+    color:#edf0f1;
+    background-color: #24252A;
     margin-right: 50px;
 }
