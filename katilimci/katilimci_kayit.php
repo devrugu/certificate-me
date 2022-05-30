@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kayıt Ol</title>
  
-    <link rel="stylesheet" href="katilimcikayit.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../css/katilimcikayit.css?v=<?php echo time(); ?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/katilimci/katilimci.js"></script>
 </head>

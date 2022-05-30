@@ -5,7 +5,7 @@
     require "header.php";
     include_once '../../includes/i_database_handler/dbh.inc.php'; //veritabanı bağlantısı
 ?>
-<link rel="stylesheet" href="kurumyönet.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/kurumyönet.css?v=<?php echo time(); ?>">
  <body>
     <main>
         <a href="kurumEkle.php" id="kurumek">Kurum Ekle</a>

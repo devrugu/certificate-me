@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <link rel="stylesheet" href="footer2.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../../css/footer2.css?v=<?php echo time(); ?>">
     <title></title>
     
 </head>
@@ -17,6 +17,6 @@
 <h2>
     Bizi Takip Edin:
 </h2>
-<img src="images/2.png" id="image">
+<img src="../../images/style_images/2.png" id="image">
 </div>
 </body>

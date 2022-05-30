@@ -1,7 +1,7 @@
 <?php
     require "header.php";
 ?>
-<link rel="stylesheet" href="kurumekle.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/kurumekle.css?v=<?php echo time(); ?>">
     <main>
         <h1>Kurum Ekle</h1>
         <?php

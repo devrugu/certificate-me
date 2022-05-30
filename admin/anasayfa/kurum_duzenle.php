@@ -1,7 +1,7 @@
 <?php
     require 'header.php';
 ?>
-<link rel="stylesheet" href="kurumduzenle.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/kurumduzenle.css?v=<?php echo time(); ?>">
     <main>
         <h1>Kurum Düzenle</h1>
         <?php

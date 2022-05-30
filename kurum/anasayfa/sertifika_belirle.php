@@ -3,7 +3,7 @@
     session_start();
     include_once '../../includes/i_database_handler/dbh.inc.php';
     date_default_timezone_set('Europe/Istanbul');
-?><link rel="stylesheet" href="sertifika_belirle.css?v=<?php echo time(); ?>">
+?><link rel="stylesheet" href="../../css/sertifika_belirle.css?v=<?php echo time(); ?>">
 
 
 <main>
@@ -74,7 +74,7 @@
         }
         
     ?>
-    <script src="sertifika_belirle.js" ></script>
+    <script src="../../js/sertifika_belirle.js" ></script>
 </main>
 
 <?php

@@ -47,7 +47,7 @@
 
     <title>Etkinlik İncele</title>
 
-    <link rel="stylesheet" href="incele.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../../css/incele.css?v=<?php echo time(); ?>">
     <title>Document</title>
 
 </head>

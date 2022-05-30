@@ -1,7 +1,7 @@
 <?php
     require 'header.php';
     date_default_timezone_set('Europe/Istanbul');
-?><link rel="stylesheet" href="düzenle.css?v=<?php echo time(); ?>">
+?><link rel="stylesheet" href="../../css/düzenle.css?v=<?php echo time(); ?>">
     <main>
         <h1 id="h">Etkinlik Düzenle</h1>
         <?php

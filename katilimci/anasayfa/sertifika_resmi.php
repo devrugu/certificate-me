@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="sertifikaresim.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/sertifikaresim.css?v=<?php echo time(); ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

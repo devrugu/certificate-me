@@ -2,7 +2,7 @@
     session_start();
     include_once '../includes/i_database_handler/dbh.inc.php';
     date_default_timezone_set('Europe/Istanbul');
-?><link rel="stylesheet" href="dogrula.css?v=<?php echo time(); ?>">
+?><link rel="stylesheet" href="../css/dogrula.css?v=<?php echo time(); ?>">
 
 <!DOCTYPE html>
 <html lang="en">

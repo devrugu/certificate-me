@@ -10,14 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
     <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="header2.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="../../css/header2.css?v=<?php echo time(); ?>">
     <title>Kurum</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="kurum_anasayfa.php">
-                <img src="../../images/tuu.png" alt="logo" width="130" height="130"id="logo">
+                <img src="../../images/style_images/tuu.png" alt="logo" width="130" height="130" id="logo">
             </a>
             <ul>
                 <li><a href="kurum_anasayfa.php">Ana Sayfa</a></li>

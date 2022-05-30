@@ -1,7 +1,7 @@
 <?php
     require "header.php";
     require '../../includes/i_database_handler/dbh.inc.php'; //veritabanı bağlantısı
-?><link rel="stylesheet" href="etkinlikekle.css?v=<?php echo time(); ?>">
+?><link rel="stylesheet" href="../../css/etkinlikekle.css?v=<?php echo time(); ?>">
 
     <main>
         <h1 id="h">Etkinlik Ekle</h1>

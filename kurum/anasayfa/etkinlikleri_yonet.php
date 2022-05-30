@@ -19,7 +19,7 @@
     }
 ?>
 <html>
-<link rel="stylesheet" href="etkinlikyönet.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/etkinlikyönet.css?v=<?php echo time(); ?>">
 
     <main>
     <a href="etkinlik_ekle.php"id="etkinlik">Etkinlik Ekle</a>

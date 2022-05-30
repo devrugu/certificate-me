@@ -18,7 +18,7 @@
     }
 ?>
 <html>
-<link rel="stylesheet" href="etkinlikler.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/etkinlikler.css?v=<?php echo time(); ?>">
 <main>
     <section>
         <div>

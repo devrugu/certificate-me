@@ -18,7 +18,7 @@
     }
 ?>
 <html>
-<link rel="stylesheet" href="etkinliklerim.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../../css/etkinliklerim.css?v=<?php echo time(); ?>">
 <main>
     <h1>Etkinliklerim</h1><br>
     <p>Kayıt olduğunuz etkinlikler burada listelenir.</p>
