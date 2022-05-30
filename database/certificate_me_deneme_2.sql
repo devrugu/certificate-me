@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2022 at 08:28 PM
+-- Generation Time: May 30, 2022 at 04:35 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -61,10 +61,8 @@ CREATE TABLE `etkinlik` (
 --
 
 INSERT INTO `etkinlik` (`e_id`, `etkinlik_adi`, `e_aciklama`, `tarih`, `yer`, `afis_resmi`, `e_guncel_mi`) VALUES
-(45, 'etkinlik deneme', 'Cras ut tincidunt elit. Maecenas id tincidunt dui. Etiam facilisis laoreet dignissim. Nulla condimentum a nisl eu scelerisque. Nullam eget lacinia mi. Nullam id augue augue. Sed nisi tellus, scelerisque a luctus ac, facilisis vitae odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum, dui et dignissim bibendum, augue eros pulvinar dui, nec suscipit mauris augue ut lectus. Curabitur purus purus, elementum eget purus sit amet, cursus luctus ipsum. Sed ac risus ac nisl euismod fermentum. Aliquam ac malesuada sapien.', '2022-05-24 17:30:00', 'etkinlik yeri deneme', 'http://localhost/certificate_me/images/etkinlik_images/download-customizer (4).png', 0),
-(46, 'afsdgdsaf', 'adsfgasdfa', '2022-09-24 20:04:00', 'adsfgasdfg', 'http://localhost/certificate_me/images/etkinlik_images/WhatsApp Image 2022-04-24 at 15.52.44.jpeg', 1),
-(47, 'asdgdfg', 'sdfghasdf', '2022-05-24 18:09:00', 'sdgfhsfgh', 'http://localhost/certificate_me/images/etkinlik_images/266-2668532_vector-pipe-smoking-man-smoking-clipart-transparent.png', 0),
-(48, 'kodlama', 'kodlama yapacağız', '2022-05-25 19:44:00', 'etkinlik yeri 123', 'http://localhost/certificate_me/images/etkinlik_images/dbjcdv3-74de8640-aae5-44a9-bd0f-ce798b76f06b.jpg', 0);
+(57, 'Deneme Etkinlik 1', 'Maecenas at fringilla ex. Cras ac est neque. Ut et posuere magna, vel aliquet tellus. Sed eleifend dignissim turpis. Aliquam erat volutpat. Morbi sit amet rutrum massa. Vivamus elementum tempus pharetra. Aenean at augue vitae dui ornare tristique. Sed eget risus porttitor turpis volutpat auctor nec vitae orci. Quisque sit amet commodo mi.', '2022-06-01 20:56:00', 'Etkinlik yeri binası bir', 'http://localhost/certificate_me/images/etkinlik_images/afis-ornekleri-2.jpg', 1),
+(58, 'Deneme Etkinlik 2', 'Curabitur non diam ligula. Phasellus maximus vitae est non eleifend. Vivamus gravida interdum magna, vel dictum lectus lobortis sed. Proin nisi diam, consectetur id viverra vitae, accumsan eu ligula. Sed tempor ut magna vitae dictum. Quisque facilisis sit amet magna nec pharetra. Nam eget lacinia turpis. Nunc dictum purus mauris, ac vestibulum mauris auctor quis.', '2022-06-02 20:59:00', 'Deneme Etkinlik binası iki', 'http://localhost/certificate_me/images/etkinlik_images/afis-ornekleri-1.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -83,12 +81,11 @@ CREATE TABLE `e_konusmacilar` (
 --
 
 INSERT INTO `e_konusmacilar` (`id`, `e_id`, `konusmaci`) VALUES
-(153, 45, 'konuşmacı'),
-(154, 45, 'konuşmacı'),
-(155, 46, 'dafgsdfg'),
-(156, 47, 'sdfghdsfgh'),
-(157, 48, 'konuşmacı 1'),
-(158, 48, 'konuşmacı 2');
+(178, 57, 'konuşmacı bir'),
+(179, 57, 'konuşmacı iki'),
+(180, 57, 'konuşmacı üç'),
+(181, 58, 'konuşmacı dört'),
+(182, 58, 'konuşmacı beş');
 
 -- --------------------------------------------------------
 
@@ -122,7 +119,8 @@ INSERT INTO `katilimci` (`k_id`, `ad`, `soyad`, `telefon`, `eposta`, `universite
 (5, 'test', 'test', '09999999999', 'test@gmail.com', '167', '12', '1671128', '3', 'test', '$2y$10$.v3LUN3muN2porriPWD6heY4N2rwrsay2KZnZ6qNFPlXAucrDZMPi'),
 (7, 'abdurrahman', 'yangel', '02222222222', 'yangel@gmail.com', '187', '94', '1875131', '6', 'yangel11', '$2y$10$h52ad0R2t4BpQs2WBBID8Ojs47TTEd5WjV1Hjhsb7gUwR7iING3yC'),
 (8, 'Taha', 'Turanoglu', '08888888888', 'tahayasin@gmail.com', '132', '669', '1321301', '4', 'ucaninek', '$2y$10$ez92oza2gflJsxNhrZbSfOW/wNZPgsDUKrDoSUFOQB0Tmhw3/pt.m'),
-(10, 'Celal', 'Şengör', '05465874515', 'celalsengor@gmail.com', '128', '583', '1281212', '6', 'celal123', '$2y$10$QGieReer3h0oIjy1TOfkOO6AO9jZGwfHUWzUw8CvDTGIi/xNbgdTu');
+(10, 'Celal', 'Şengör', '05465874515', 'celalsengor@gmail.com', '128', '583', '1281212', '6', 'celal123', '$2y$10$QGieReer3h0oIjy1TOfkOO6AO9jZGwfHUWzUw8CvDTGIi/xNbgdTu'),
+(11, 'qaSas', 'AsASas', '05546784454', 'dwqewqe@fds.com', '235', '9', '2355159', '4', 'samet44', '$2y$10$5c6kpjeH8yFgpb0SeNIMjuVBKFlVgaE4qgU9CI3jHHT2ssC8I/.Iy');
 
 -- --------------------------------------------------------
 
@@ -135,20 +133,6 @@ CREATE TABLE `katilimci_etkinlik` (
   `k_id` int(11) NOT NULL,
   `e_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `katilimci_etkinlik`
---
-
-INSERT INTO `katilimci_etkinlik` (`id`, `k_id`, `e_id`) VALUES
-(6, 1, 46),
-(7, 1, 45),
-(8, 2, 45),
-(9, 3, 45),
-(10, 4, 45),
-(11, 5, 45),
-(12, 7, 45),
-(13, 1, 48);
 
 -- --------------------------------------------------------
 
@@ -166,19 +150,6 @@ CREATE TABLE `sertifika` (
   `verilen_etkinlik` varchar(900) NOT NULL,
   `sertifika_resmi` varchar(900) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `sertifika`
---
-
-INSERT INTO `sertifika` (`s_id`, `sertifika_kodu`, `sertifika_adi`, `sertifika_metni`, `sertifikayi_veren_birim`, `sertifikayi_alan_kisi`, `verilen_etkinlik`, `sertifika_resmi`) VALUES
-(16, '45628e1c2f121a1', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '1', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c2f121a1.jpeg'),
-(17, '45628e1c67bd03b', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '2', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c67bd03b.jpeg'),
-(18, '45628e1c68a3d12', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '3', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c68a3d12.jpeg'),
-(19, '45628e1c6966694', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '4', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c6966694.jpeg'),
-(20, '45628e1c6a65dee', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '5', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c6a65dee.jpeg'),
-(21, '45628e1c6b50e72', 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', '6', '7', '45', 'http://localhost/certificate_me/images/sertifika_images/45628e1c6b50e72.jpeg'),
-(22, '48628e5ce86eb2e', 'kodlama', 'kodlama sertifika açıklaması', '4', '1', '48', 'http://localhost/certificate_me/images/sertifika_images/48628e5ce86eb2e.jpeg');
 
 -- --------------------------------------------------------
 
@@ -199,10 +170,8 @@ CREATE TABLE `sertifika_bilgileri` (
 --
 
 INSERT INTO `sertifika_bilgileri` (`id`, `e_id`, `sertifika_adi`, `sertifika_metni`, `sertifika_sablonu`) VALUES
-(3, 45, 'Etkinlik Deneme Sertifikası', 'Sed eleifend mauris vel nibh mollis, et ullamcorper lacus tempus. In non elit cursus, elementum erat eget, vulputate urna. Curabitur et sagittis orci. Nunc mollis consectetur feugiat. In vitae metus eget neque iaculis aliquet. Cras nec elit a velit pellentesque bibendum eu quis nibh. Mauris nec suscipit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula tellus ac metus tristique, quis condimentum lacus rhoncus. Praesent maximus tortor condimentum ligula commodo, ac iaculis justo laoreet.', 'http://localhost/certificate_me/images/sertifika_sablon_images/OSD42473089.jpg'),
-(4, 46, 'asdfgsadfg', 'sdfghasdrfgad', 'http://localhost/certificate_me/images/sertifika_sablon_images/1595904.jpg'),
-(5, 47, 'fgjdghfjdf', 'hjdghfdsg', 'http://localhost/certificate_me/images/sertifika_sablon_images/KpyX9APjX5f9Iy44wRhygWAAAAAElFTkSuQmCC.png'),
-(6, 48, 'kodlama', 'kodlama sertifika açıklaması', 'http://localhost/certificate_me/images/sertifika_sablon_images/isterler.png');
+(15, 57, 'Etkinlik Deneme Sertifikası bir', 'Sed interdum sodales orci vitae imperdiet. Aenean ut posuere quam. Sed auctor massa justo, id convallis metus congue sit amet. Duis condimentum ut nulla non vehicula.', 'http://localhost/certificate_me/images/sertifika_sablon_images/sertifika1.png'),
+(16, 58, 'Etkinlik Deneme Sertifikası iki', 'Sed viverra lorem non feugiat vehicula. Vestibulum vehicula nisl vel risus suscipit porta. Curabitur convallis iaculis sollicitudin. Suspendisse purus justo, finibus vel egestas sit amet, eleifend maximus neque.', 'http://localhost/certificate_me/images/sertifika_sablon_images/sertifika2.png');
 
 -- --------------------------------------------------------
 
@@ -230,7 +199,9 @@ INSERT INTO `sertifika_veren_birim` (`svb_id`, `birim_adi`, `svb_aciklama`, `adr
 (4, 'Örnek şirket', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec pulvinar enim. Vivamus non dui quis felis egestas consequat commodo in ex. Nunc at nisi auctor, laoreet elit sit amet, eleifend nisl. Morbi rhoncus massa justo, imperdiet lobortis dui porta eu. Nulla sapien sem, egestas nec neque a, maximus mattis quam. In ornare neque vel ornare pulvinar. Ut tincidunt ultrices augue sit amet aliquet. Curabitur tristique euismod tortor et ultrices.', 'Örnek Adres', 'Örnek', 'Örnek', 'ornek@gmail.com', 'ornek', '$2y$10$/sOphX2SAsi5tPuXfApDPObvkvXpFp7dJzWkvcg/lZyTuJP.6Jh2m'),
 (6, 'Örnek Şirket 4', 'Örnek açıklama 4', 'Örnek adres 4', 'Örnek4', 'Örnek4', 'ornek4@gmail.com', 'ornek4', '$2y$10$jpiQGhYLoYerst/DRNrt7OHtl3Ea0YsAfh44QViw0TRaRmE/O/9UW'),
 (7, 'Örnek şirket 5', 'Örnek açıklama 5', 'Örnek adres 5', 'Örnek5', 'Örnek5', 'ornek5@gmail.com', 'ornek5', '$2y$10$ipYGPPUNV8iasXZQvsudeu95QNHgrHZqKK.4tqYljaxcmEmntFqfu'),
-(8, 'Örnek Şirket 6', 'Açıklama 6', 'Adres 6', 'ornek6', 'ornek6', 'ornek6@gmail.com', 'ornek6', '$2y$10$jOXuifW0Zk8t/izYu4sMPu7j0e6maMSe6IEnoWyzziiwXrij4EDRO');
+(8, 'Örnek Şirket 6', 'Açıklama 6', 'Adres 6', 'ornek6', 'ornek6', 'ornek6@gmail.com', 'ornek6', '$2y$10$jOXuifW0Zk8t/izYu4sMPu7j0e6maMSe6IEnoWyzziiwXrij4EDRO'),
+(9, 'Örnek Şirket 7', 'fhhfh', 'e3wqeqw', 'ewqe', 'eqwwqe', 'qdw@gmail.com', 'ornek8', '$2y$10$ct7Z9lSRerdiVCWxw54/Gen/3SRSe9o9ntMwPevuXPge4fqawA/Lu'),
+(11, 'asdsadgf', 'asdfgasdf', 'asdfasdf', 'Uğurcan', 'Yılmaz', 'ugurcanyilmaz7534@gmail.com', 'deneme', '$2y$10$p5tzWqiXaTjQnwokKi9ENet6AXrfy/VbmIpxa2hy6VIYwvA/cJwWq');
 
 -- --------------------------------------------------------
 
@@ -273,10 +244,8 @@ CREATE TABLE `svb_etkinlik` (
 --
 
 INSERT INTO `svb_etkinlik` (`id`, `svb_id`, `e_id`) VALUES
-(49, 6, 45),
-(50, 6, 46),
-(51, 6, 47),
-(52, 4, 48);
+(69, 4, 57),
+(70, 4, 58);
 
 -- --------------------------------------------------------
 
@@ -9565,43 +9534,43 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `etkinlik`
 --
 ALTER TABLE `etkinlik`
-  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT for table `e_konusmacilar`
 --
 ALTER TABLE `e_konusmacilar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=159;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 
 --
 -- AUTO_INCREMENT for table `katilimci`
 --
 ALTER TABLE `katilimci`
-  MODIFY `k_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `k_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `katilimci_etkinlik`
 --
 ALTER TABLE `katilimci_etkinlik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `sertifika`
 --
 ALTER TABLE `sertifika`
-  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `sertifika_bilgileri`
 --
 ALTER TABLE `sertifika_bilgileri`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `sertifika_veren_birim`
 --
 ALTER TABLE `sertifika_veren_birim`
-  MODIFY `svb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `svb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `sinif`
@@ -9613,7 +9582,7 @@ ALTER TABLE `sinif`
 -- AUTO_INCREMENT for table `svb_etkinlik`
 --
 ALTER TABLE `svb_etkinlik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT for table `yok_bolumler`
